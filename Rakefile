@@ -290,3 +290,8 @@ else
 end
 
 task :default => [ :version, :compile ]
+
+desc "generate gemspec"
+task :gemspec do
+  open("#{PKG_NAME}.gemspec", "w"){|file| file.write spec_ext.to_ruby}
+end
