@@ -1,0 +1,5 @@
+pkg
+*.bundle
+*.o
+ext/json/ext/generator/Makefile
+ext/json/ext/parser/Makefile
